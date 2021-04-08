@@ -21,6 +21,10 @@ body {
 
 .container {
   height: 600px;
+  width: 400px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
   background-color: #fefffe;
 
   border: solid 1px #00000010;
