@@ -4,9 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Stylish form</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <div class="container">
+      <h1>Say Hello!</h1>
+      <form action="/thanks/thank_you.html">
+        <label for="name">Your Name</label>
+        <input
+          id="name"
+          class="input"
+          type="text"
+          required
+          minlength="2"
+          maxlength="15"
+          placeholder="Enter your name"
+          size="40"
+        />
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="input"
+          required
+          placeholder="Enter your email address"
+          size="40"
+        />
+
+        <label for="services">Needed services</label>
+
+        <select name="info" id="services" class="input" required>
+          <option value="">Choose services</option>
+          <option value="service-1">service-1</option>
+          <option value="service-2">service-2</option>
+          <option value="service-3">service-3</option>
+          <option value="service-4">service-4</option>
+        </select>
+
+        <label for="budget">Budget</label>
+
+        <select name="number" id="budget" class="input" required>
+          <option value="">Select budget</option>
+          <option value="200">200</option>
+          <option value="400">400</option>
+          <option value="600">600</option>
+          <option value="800">800</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          class="input"
+          placeholder="Your message here.."
+          maxlength="250"
+          cols="45"
+          rows="8"
+        ></textarea>
+
+        <label for="submit"></label>
+        <button formaction="/thank-you/index.html" class="button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </body>
 </html>

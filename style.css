@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background: rgb(96, 149, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(96, 149, 225, 1) 0%,
+    rgba(216, 84, 234, 1) 30%,
+    rgba(255, 194, 180, 1) 100%
+  );
+}
+
+.container {
+  height: 600px;
+  background-color: #fefffe;
+
+  border: solid 1px #00000010;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+form {
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  padding: 10px 0px;
+  font-weight: bold;
+  color: #b1ad9f;
+  font-size: 10px;
+}
+
+input {
+  padding-bottom: 10px;
+  border: 0;
+  color: #e1dfe5;
+  font-size: 15px;
+}
+
+input:focus {
+  color: black;
+}
+
+.input:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.input:valid {
+  border-bottom: 1px solid lightgreen;
+}
+
+.input:invalid {
+  border-bottom: 0.3px solid #e1dfe5;
+}
+
+select {
+  padding-bottom: 10px;
+  border: 0;
+  width: 100%;
+}
+
+textarea {
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px 0px 5px 0px;
+}
+
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px 120px;
+  border-radius: 20px;
+  border: none;
+
+  color: white;
+  background: rgb(96, 149, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(96, 149, 225, 1) 0%,
+    rgba(216, 84, 234, 1) 30%,
+    rgba(255, 194, 180, 1) 100%
+  );
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
